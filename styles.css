@@ -2,24 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body {
-    background: red;
+    position: relative;
+    background: Black;
     height: 100dvh;
     width: 100%;
 }
 
 .img {
-    width: 50px;
+    color: white;
+    height: 50px;
 }
 
 header {
+    position: fixed;
     width: 100%;
 }
 
 nav {
-    background-color: aqua;
+    background: linear-gradient(326deg, rgba(207,207,207,0.8045343137254902) 0%, rgba(19,19,19,1) 62%);
     justify-content: space-between;
     display: flex;
     width: 100%;
@@ -38,4 +42,34 @@ nav div:nth-child(2) {
     display: flex;
     
     width: auto;
+}
+
+.home {
+    align-items: center;
+    background: linear-gradient(326deg, rgba(207,207,207,1) 0%, rgba(19,19,19,1) 80%);
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100dvh - 90px);
+    justify-content: space-evenly;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+}
+
+.home-content {
+    width: 40%;
+}
+h1 {
+    display: block;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.home-content p {
+    font-size: 1.4rem;
+}
+
+.home-img {
+    
 }
