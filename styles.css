@@ -71,5 +71,9 @@ h1 {
 }
 
 .home-img {
-    
+    border-radius: 40px;
+    overflow: hidden;
+}
+.home-img img {
+    width: 100%;
 }
