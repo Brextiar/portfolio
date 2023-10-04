@@ -1,8 +1,10 @@
+/*background: linear-gradient(151deg, rgba(207,207,207,0.8045343137254902) 0%, rgba(19,19,19,1) 73%);*/
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: #ffe1ac;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -13,25 +15,36 @@ body {
 }
 
 .img {
-    color: white;
     height: 50px;
+    text-shadow: 0 0 5px rgba(207,207,207,1);
 }
 
 header {
+    
     position: fixed;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
 }
 
 nav {
-    background: linear-gradient(326deg, rgba(207,207,207,0.8045343137254902) 0%, rgba(19,19,19,1) 62%);
+    background-color: rgba(207,207,207,.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(207,207,207,.5);
+    border-radius: 0 0 20px 20px;
+    height: 70px;
     justify-content: space-between;
     display: flex;
+    padding: 0 20px;
     width: 100%;
 }
 
 nav div:nth-child(1) {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 10%;
 }
 div span {
     font-size: 2rem;
@@ -40,40 +53,69 @@ div span {
 
 nav div:nth-child(2) {
     display: flex;
-    
-    width: auto;
+    margin-right: 10%;
+}
+div ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li {
+    display: block;
+    margin: auto 5px;
+    text-align: center;
+    width: 110px;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Sono', sans-serif;
+    font-size: 1.2rem;
+}
+li a:hover {
+    text-decoration: underline;
 }
 
 .home {
     align-items: center;
-    background: linear-gradient(326deg, rgba(207,207,207,1) 0%, rgba(19,19,19,1) 80%);
+    background: linear-gradient(326deg, #cfcfcf 0%, #223344 80%);
     display: flex;
     flex-wrap: wrap;
-    height: calc(100dvh - 90px);
+    height: 100dvh;
     justify-content: space-evenly;
-    position: absolute;
-    top: 90px;
     width: 100%;
 }
 
 .home-content {
+    background: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 5px 2px rgba(19,19,19,.2),
+                2px 2px 5px #ffffff80 inset;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    padding: 15px;
     width: 40%;
 }
 h1 {
     display: block;
+    font-family: 'Raleway', sans-serif;
     font-size: 4rem;
+    margin-top: 100px;
     width: 100%;
     text-align: center;
 }
 
 .home-content p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .home-img {
     border-radius: 40px;
+    box-shadow: 2px 2px 5px 2px rgba(19,19,19,.5);
+    margin-bottom: 100px;
     overflow: hidden;
+    height: 325px;
 }
 .home-img img {
-    width: 100%;
+    height: 100%;
 }
