@@ -10,25 +10,27 @@
 body {
     position: relative;
     background: Black;
-    height: 100dvh;
+    height: auto;
     width: 100%;
 }
 
-.img {
-    height: 50px;
-    text-shadow: 0 0 5px rgba(207,207,207,1);
+hr {
+    border: 2px solid rgba(19,19,19,.5);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
 }
 
 header {
-    
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
+    z-index: 6000;
 }
 
 nav {
-    background-color: rgba(207,207,207,.1);
+    background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(207,207,207,.5);
     border-radius: 0 0 20px 20px;
@@ -39,51 +41,68 @@ nav {
     width: 100%;
 }
 
-nav div:nth-child(1) {
+.nav-logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
     margin-left: 10%;
 }
-div span {
+
+.img {
+    height: 50px;
+}
+
+.nav-logo span {
     font-size: 2rem;
     text-align: center;
 }
 
-nav div:nth-child(2) {
+.nav-link {
     display: flex;
     margin-right: 10%;
 }
-div ul {
+.nav-link ul {
     display: flex;
     justify-content: space-evenly;
 }
 
-ul li {
+.nav-link ul li {
     display: block;
     margin: auto 5px;
     text-align: center;
     width: 110px;
 }
 
-li a {
+.link {
     text-decoration: none;
     font-family: 'Sono', sans-serif;
     font-size: 1.2rem;
 }
-li a:hover {
+.link:hover {
     text-decoration: underline;
 }
 
-.home {
+.home-section {
     align-items: center;
     background: linear-gradient(326deg, #cfcfcf 0%, #223344 80%);
     display: flex;
     flex-wrap: wrap;
     height: 100dvh;
     justify-content: space-evenly;
+    position: relative;
     width: 100%;
+}
+
+.home-section::before {
+    content: "ANTOINE FERRON";
+    font-size: 13rem;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    color: transparent;
+    text-shadow: 0 0 30px rgba(0,0,0,.5);
+    z-index: 0;
 }
 
 .home-content {
@@ -96,12 +115,19 @@ li a:hover {
     padding: 15px;
     width: 40%;
 }
+.title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+}
 h1 {
     display: block;
     font-family: 'Raleway', sans-serif;
     font-size: 4rem;
-    margin-top: 100px;
-    width: 100%;
+    
+
     text-align: center;
 }
 
@@ -115,7 +141,15 @@ h1 {
     margin-bottom: 100px;
     overflow: hidden;
     height: 325px;
+    z-index: 3;
 }
 .home-img img {
     height: 100%;
+}
+
+.home-journey {
+    background: linear-gradient(146deg, #cfcfcf 0%, #223344 80%);
+    height: 100dvh;
+    position: relative;
+    width: 100%;
 }
