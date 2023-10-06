@@ -35,7 +35,8 @@ header {
 nav {
     background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(207,207,207,.5);
+    box-shadow: 0 0 10px #f5797980,
+                0 0 10px #f5797980 inset;
     border-radius: 0 0 20px 20px;
     height: 70px;
     justify-content: space-around;
@@ -56,7 +57,7 @@ header::before {
     border-radius: 10px 12px 160px 160px / 11px 13px 170px 170px;
     background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(207,207,207,.5);
+    box-shadow: 0 0 10px #f5797980;
     position: absolute;
     top: 70px;
     left: 50%;
@@ -70,10 +71,6 @@ header::before {
     justify-content: space-between;
     gap: 10px;
     margin-left: 10%;
-}
-
-.img {
-    height: 50px;
 }
 
 .nav-logo span {
@@ -124,15 +121,14 @@ header::before {
     display: block;
     position: absolute;
     color: transparent;
-    text-shadow: 0 0 30px rgba(0,0,0,.3);
     z-index: 0;
 }
 
 .home-content {
-    background: rgba(203, 113, 236, 0);
     backdrop-filter: blur(10px);
     box-shadow: 4px 4px 5px #f5797980 inset,
-                -4px -4px 5px #f5797980 inset;
+                -4px -4px 5px #f5797980 inset,
+                0 0 10px #f5797980;
     border-radius: 15px;
     margin-bottom: 100px;
     padding: 15px;
@@ -151,11 +147,12 @@ header::before {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background: rgba(203, 113, 236, 0);
     backdrop-filter: blur(10px);
-    box-shadow: 2px 2px 5px 2px rgba(19,19,19,.2),
-                2px 2px 5px #ffffff80 inset;
+    box-shadow: 4px 4px 5px #f5797980 inset,
+                -4px -4px 5px #f5797980 inset,
+                0 0 10px #f5797980;
     border-radius: 15px;
+    padding: 10px;
     width: 40%;
 }
 
@@ -175,10 +172,7 @@ h1 {
 }
 
 .home-img {
-    border-radius: 40px;
-    box-shadow: 2px 2px 5px 2px rgba(19,19,19,.5);
     margin-bottom: 100px;
-    overflow: hidden;
     height: 325px;
     z-index: 3;
 }
