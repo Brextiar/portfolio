@@ -181,8 +181,29 @@ h1 {
 }
 
 .home-journey {
-    background: linear-gradient(146deg, #cfcfcf 0%, #223344 80%);
+    align-items: center;
+    background-image: url(./images/background3.jpg);
+    background-size: cover;
+    display: flex;
     height: 100dvh;
     position: relative;
     width: 100%;
+}
+
+.home-journey-content {
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 5px #f5797980 inset,
+                -4px -4px 5px #f5797980 inset,
+                0 0 10px #f5797980;
+    border-radius: 15px;
+    margin-left: 14.5%;
+    padding: 15px;
+    width: 40%;
+}
+
+.home-journey-content p {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
 }
